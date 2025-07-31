@@ -97,6 +97,7 @@ int main() {
     int choice;
     int id;
     char name[50];
+    int age;
     do{
     printf("============MENU==========\n");
     printf("1: them sinh vien \n");
@@ -113,6 +114,9 @@ int main() {
             scanf("%d",&id);
             printf("moi ban nhap vao ten sinh vien:\n");
             gets(name);
+            printf("moi ban nhap vao tuoi sinh vien:\n");
+            scanf("%d",&age);
+            root =insertStudent(root,id,age,name);
 
 
 
@@ -123,11 +127,12 @@ int main() {
             break;
         case 3:
             printf("nhap ma id can tim :\n");
-            gets(id);
+           scanf("%d",&id);
             printf(" ko tim thay sinh vien\n");
             break;
         case 4:
             printf("nhap ma id can xoa :\n");
+            scanf("%d",&id);
            root=deleteStudent(root,id);
             printf(" da xoa sinh vien\n");
             break;
