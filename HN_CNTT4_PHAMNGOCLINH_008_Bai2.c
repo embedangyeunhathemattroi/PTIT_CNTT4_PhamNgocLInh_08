@@ -113,7 +113,6 @@ int main() {
             scanf("%d",&id);
             printf("moi ban nhap vao ten sinh vien:\n");
             gets(name);
-           root =insertStudent(root,id,name);
 
 
 
